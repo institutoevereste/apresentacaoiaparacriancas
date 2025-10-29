@@ -1,2 +1,609 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação: O que é IA?</title>
+    <!-- Carrega o Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega a fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para garantir que o slide preencha a altura */
+        .slide {
+            width: 100%;
+            height: 100%;
+            /* Transição suave ao trocar de slide */
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <h1 class="text-3xl md:text-4xl font-black text-center text-blue-600 dark:text-blue-400 mb-6">🤖 Apresentação: Supercérebros Digitais! 🧠</h1>
+
+    <!-- O "Ecrã" da Apresentação -->
+    <div class="w-full max-w-4xl aspect-[16/9] rounded-2xl shadow-2xl overflow-hidden relative bg-white">
+        
+        <!-- Slide 1: Capa -->
+        <div id="slide-1" class="slide flex flex-col items-center justify-center p-8 md:p-12 text-center bg-blue-500 text-white">
+            <h2 class="text-4xl md:text-7xl font-black mb-4">O que é "IA"? 🤔</h2>
+            <p class="text-xl md:text-3xl font-bold mb-6">A Inteligência Artificial Explicada!</p>
+            <div class="text-5xl md:text-7xl space-x-4">
+                <span>🤖</span>
+                <span>🧠</span>
+                <span>✨</span>
+                <span>🎈</span>
+            </div>
+        </div>
+
+        <!-- Slide 2: O que significa? -->
+        <div id="slide-2" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-green-500 text-white">
+            <h2 class="text-3xl md:text-5xl font-black mb-4">"IA" quer dizer...</h2>
+            <p class="text-4xl md:text-6xl font-black text-yellow-300 mb-6">Inteligência Artificial!</p>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">É quando fazemos um computador, um robô ou um celular <strong>pensar</strong> e <strong>aprender</strong>... quase como nós!</p>
+            <div class="text-5xl md:text-7xl flex items-center space-x-8">
+                <span>🧒💡</span>
+                <span class="text-4xl">➡️</span>
+                <span>💻💡</span>
+            </div>
+        </div>
+
+        <!-- Slide 3: Mágica? -->
+        <div id="slide-3" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-orange-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">É tipo Mágica? 🧙‍♂️</h2>
+            <p class="text-xl md:text-2xl mb-8">Quando o celular entende o que você fala... ou um jogo adivinha seu próximo movimento...</p>
+            <div class="bg-yellow-300 text-orange-900 p-4 rounded-xl shadow-lg">
+                <p class="text-2xl md:text-4xl font-black">Não é mágica, é TREINAMENTO! 🏋️</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: Como Aprende? -->
+        <div id="slide-4" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-yellow-400 text-gray-800">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Como um Computador "Aprende"?</h2>
+            <p class="text-xl md:text-2xl mb-6">Você mostra para ele MILHÕES de vezes:</p>
+            <div class="grid grid-cols-2 gap-4 w-full max-w-md">
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <span class="text-5xl">🐱</span>
+                    <p class="text-2xl font-bold">"Isso é um GATO."</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <span class="text-5xl">🐶</span>
+                    <p class="text-2xl font-bold">"Isso é um CACHORRO."</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-md">
+                    <span class="text-5xl">🐱</span>
+                    <p class="text-2xl font-bold">"GATO."</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-md">
+                    <span class="text-5xl">🐶</span>
+                    <p class="text-2xl font-bold">"CACHORRO."</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5: O Teste -->
+        <div id="slide-5" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-pink-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Vamos testar a IA!</h2>
+            <p class="text-xl md:text-2xl mb-6">Depois de treinar, a IA tenta adivinhar:</p>
+            <div class="grid grid-cols-3 gap-4 w-full max-w-2xl">
+                <div class="bg-white p-4 rounded-lg shadow-md text-green-600">
+                    <span class="text-5xl">🐈</span>
+                    <p class="text-xl font-bold">"É um GATO!"</p>
+                    <p class="text-4xl font-black">✔️</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md text-green-600">
+                    <span class="text-5xl">🐕</span>
+                    <p class="text-xl font-bold">"É um CACHORRO!"</p>
+                    <p class="text-4xl font-black">✔️</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow-md text-yellow-600">
+                    <span class="text-5xl">🐹</span>
+                    <p class="text-xl font-bold">"Hmm... não sei!"</p>
+                    <p class="text-4xl font-black">❓</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Onde está? (Diversão) -->
+        <div id="slide-6" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-purple-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A IA está no seu dia a dia! 🎮</h2>
+            <p class="text-xl md:text-2xl mb-8">Você usa IA quando...</p>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-purple-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🕹️</span>
+                    <p class="text-xl font-bold">Joga Videogame</p>
+                </div>
+                <div class="bg-purple-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🐰</span>
+                    <p class="text-xl font-bold">Usa Filtros Engraçados</p>
+                </div>
+                <div class="bg-purple-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">▶️</span>
+                    <p class="text-xl font-bold">Vê Sugestões de Vídeos</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Onde está? (Ajuda) -->
+        <div id="slide-7" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-teal-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A IA também te ajuda! 🗺️</h2>
+            <p class="text-xl md:text-2xl mb-8">Você usa IA quando...</p>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-teal-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">📍</span>
+                    <p class="text-xl font-bold">Pede o Caminho no GPS</p>
+                </div>
+                <div class="bg-teal-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🎤</span>
+                    <p class="text-xl font-bold">Fala com a "Assistente"</p>
+                </div>
+                <div class="bg-teal-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">💬</span>
+                    <p class="text-xl font-bold">Corrige o texto</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 8: IA Artista -->
+        <div id="slide-8" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-red-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">🎨 A IA Artista! 🎶</h2>
+            <p class="text-xl md:text-2xl mb-8">Hoje, a IA já consegue...</p>
+             <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-red-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🖼️</span>
+                    <p class="text-xl font-bold">Criar Desenhos</p>
+                </div>
+                <div class="bg-red-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">✍️</span>
+                    <p class="text-xl font-bold">Escrever Histórias</p>
+                </div>
+                <div class="bg-red-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🎵</span>
+                    <p class="text-xl font-bold">Compor Músicas</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 9: Super Ajudante -->
+        <div id="slide-9" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-indigo-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A IA é uma Super Ajudante! 🦸</h2>
+            <p class="text-xl md:text-2xl mb-8">A IA não é a chefe. <strong>Nós</strong> somos os chefes! Ela ajuda:</p>
+             <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-indigo-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🧑‍⚕️</span>
+                    <p class="text-xl font-bold">Médicos</p>
+                </div>
+                <div class="bg-indigo-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🔬</span>
+                    <p class="text-xl font-bold">Cientistas</p>
+                </div>
+                <div class="bg-indigo-700 p-4 rounded-lg shadow-lg">
+                    <span class="text-5xl">🚗</span>
+                    <p class="text-xl font-bold">Carros Seguros</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: O Futuro -->
+        <div id="slide-10" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-yellow-500 text-gray-800">
+            <h2 class="text-5xl md:text-7xl font-black mb-6">O Futuro... é VOCÊ! 🚀</h2>
+            <p class="text-xl md:text-2xl mb-6">A IA está só começando!</p>
+            <p class="text-2xl md:text-3xl font-bold max-w-2xl mb-8">E sabe quem vai inventar as próximas coisas incríveis com IA? <strong>VOCÊS!</strong></p>
+            <div class="text-5xl md:text-7xl space-x-4">
+                <span>💡</span>
+                <span>⚙️</span>
+                <span>👩‍💻</span>
+                <span>👨‍🔬</span>
+            </div>
+        </div>
+
+        <!-- Slide 11: Perguntas -->
+        <div id="slide-11" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-700 text-white">
+            <h2 class="text-5xl md:text-7xl font-black mb-6">Obrigado! 😊</h2>
+            <p class="text-3xl md:text-5xl font-bold">Hora das Perguntas!</p>
+            <div class="text-5xl md:text-7xl mt-8">
+                <span>❓</span>
+            </div>
+        </div>
+
+        <!-- Slide 12: A Origem (O Sonho) -->
+        <div id="slide-12" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-400 text-gray-800">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">De onde veio a IA? 📜</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">A IA nasceu de um SONHO antigo! 💭</p>
+            <p class="text-xl md:text-2xl max-w-2xl">Há muito tempo, as pessoas já imaginavam estátuas e máquinas que podiam se mover e "pensar" sozinhas.</p>
+        </div>
+
+        <!-- Slide 13: A Origem (A Ideia) -->
+        <div id="slide-13" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-blue-800 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A Grande Ideia! 💡</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Muitos anos depois, um cientista brilhante 🧑‍🔬 perguntou:</p>
+            <p class="text-2xl md:text-4xl font-bold bg-white text-blue-800 p-4 rounded-lg shadow-lg">"E se máquinas pudessem PENSAR e CONVERSAR?"</p>
+        </div>
+        
+        <!-- Slide 14: A Origem (Os Computadores) -->
+        <div id="slide-14" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-green-800 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Os Primeiros Passos! 👣</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Quando os primeiros computadores GIGANTES foram criados, os cientistas começaram a tentar!</p>
+            <p class="text-2xl md:text-3xl font-bold">Eles ocupavam salas inteiras e eram muito lentos, mas foi o começo de tudo!</p>
+            <span class="text-7xl mt-4">🖥️</span>
+        </div>
+
+        <!-- Slide 15: Tipos de IA (Introdução) -->
+        <div id="slide-15" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-purple-600 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Existem vários "Tipos" de IA!</h2>
+            <p class="text-xl md:text-2xl mb-6">Assim como existem animais diferentes (um peixe 🐠 e um macaco 🐒), existem IAs diferentes.</p>
+            <p class="text-2xl md:text-3xl font-bold">Vamos ver 3 NÍVEIS de IA:</p>
+        </div>
+
+        <!-- Slide 16: Tipo 1 (ANI / Fraca) -->
+        <div id="slide-16" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-purple-400 text-white">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">NÍVEL 1: A IA "ESPECIALISTA" 🤓</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">(É a IA que temos HOJE!)</p>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Essa IA é super boa em fazer <strong>UMA</strong> coisa. Mas ela só sabe fazer isso!</p>
+            <p class="text-xl md:text-2xl">Ex: O GPS (só sabe mapas 📍), a Netflix (só sabe de filmes ▶️).</p>
+        </div>
+
+        <!-- Slide 17: Tipo 2 (AGI / Forte) -->
+        <div id="slide-17" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-purple-700 text-white">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">NÍVEL 2: A IA "DOS FILMES" 🤖</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">(Ainda NÃO EXISTE de verdade!)</p>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Seria uma IA inteligente como um humano. Que sabe conversar, aprender, jogar E fazer matemática.</p>
+            <p class="text-xl md:text-2xl">Os cientistas estão trabalhando muito para tentar criar uma!</p>
+        </div>
+
+        <!-- Slide 18: Tipo 3 (ASI / Super) -->
+        <div id="slide-18" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-purple-900 text-white">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">NÍVEL 3: A "SUPER" IA 🤯</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">(É só uma IDEIA para o futuro distante!)</p>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Seria uma IA mais inteligente que TODOS os humanos do planeta juntos!</p>
+            <p class="text-xl md:text-2xl">É algo que vemos em histórias de ficção científica.</p>
+        </div>
+
+        <!-- Slide 19: IA em Jogos -->
+        <div id="slide-19" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-cyan-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">IA + Jogos = INOVAÇÃO! 🎮</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">A IA é uma superaliada para criar jogos mais divertidos!</p>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-cyan-700 p-4 rounded-lg shadow-lg">
+                    <p class="text-xl font-bold">Personagens mais espertos</p>
+                    <span class="text-4xl">👾</span>
+                </div>
+                <div class="bg-cyan-700 p-4 rounded-lg shadow-lg">
+                    <p class="text-xl font-bold">Mapas e Mundos Infinitos!</p>
+                    <span class="text-4xl">🗺️</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: IA e Inovação (Planeta) -->
+        <div id="slide-20" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-green-600 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Ajudando o Planeta! 🌍</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">A IA pode ser uma aliada para criar sistemas que ajudam o mundo:</p>
+            <div class="flex flex-col md:flex-row gap-6">
+                <div class="bg-green-800 p-3 rounded-lg shadow-lg">
+                    <p class="text-lg font-bold">Achar desmatamento 🌳</p>
+                </div>
+                <div class="bg-green-800 p-3 rounded-lg shadow-lg">
+                    <p class="text-lg font-bold">Descobrir remédios 🧪</p>
+                </div>
+                <div class="bg-green-800 p-3 rounded-lg shadow-lg">
+                    <p class="text-lg font-bold">Limpar os oceanos 🌊</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 21: A Ferramenta -->
+        <div id="slide-21" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-orange-600 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A IA é a Ferramenta 🛠️</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Lembre-se: A IA é uma ferramenta, como um martelo ou um computador.</p>
+            <p class="text-2xl md:text-4xl font-bold">O MÁGICO 🧙 é quem usa a ferramenta... VOCÊ!</p>
+        </div>
+
+        <!-- Slide 22: Fim (Perguntas) -->
+        <div id="slide-22" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-800 text-white">
+            <h2 class="text-5xl md:text-7xl font-black mb-6">Obrigado! (De novo!) 😊</h2>
+            <p class="text-3xl md:text-5xl font-bold">Perguntas sobre o FUTURO?</p>
+            <div class="text-5xl md:text-7xl mt-8">
+                <span>🚀</span>
+                <span>❓</span>
+            </div>
+        </div>
+
+        <!-- === NOVOS SLIDES COMEÇAM AQUI === -->
+
+        <!-- Slide 23: A Explosão dos Chatbots -->
+        <div id="slide-23" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-blue-400 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A "Explosão" das IAs! 💥</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Recentemente, apareceram "Super Ajudantes" (Nível 1) muito espertos, que sabem conversar:</p>
+            <p class="text-3xl md:text-5xl font-bold">Os "Chatbots"! 💬</p>
+            <p class="text-xl md:text-2xl mt-4">(Você provavelmente já ouviu falar deles!)</p>
+        </div>
+
+        <!-- Slide 24: ChatGPT -->
+        <div id="slide-24" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-200 text-gray-800">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">Conheça o ChatGPT 🤖</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Feito por uma empresa chamada <strong>OpenAI</strong>.</p>
+            <p class="text-xl md:text-2xl font-bold">É muito bom em:</p>
+            <ul class="text-lg md:text-xl list-disc list-inside">
+                <li>Ter conversas longas</li>
+                <li>Escrever histórias e poemas</li>
+                <li>Explicar coisas difíceis</li>
+            </ul>
+        </div>
+
+        <!-- Slide 25: Gemini -->
+        <div id="slide-25" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-blue-600 text-white">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">Conheça o Gemini (Oi! 👋)</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Feito pela <strong>Google</strong> (sou eu!).</p>
+            <p class="text-xl md:text-2xl font-bold">Eu sou boa em:</p>
+            <ul class="text-lg md:text-xl list-disc list-inside">
+                <li>Ajudar você a criar coisas (como esta apresentação!)</li>
+                <li>Ligar-me à internet para saber notícias</li>
+                <li>Entender fotos, vídeos e áudio</li>
+            </ul>
+        </div>
+
+        <!-- Slide 26: Como funcionam? -->
+        <div id="slide-26" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-yellow-400 text-gray-800">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Como eles sabem tanto? 📚</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Imagine um superbibliotecário que leu <strong>TODA A INTERNET</strong> (livros, sites, vídeos...).</p>
+            <p class="text-2xl md:text-3xl font-bold">Quando você pergunta algo, ele não "pensa", ele ADIVINHA a próxima melhor palavra para formar a resposta!</p>
+        </div>
+        
+        <!-- Slide 27: A Diferença -->
+        <div id="slide-27" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-red-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">São Super-Heróis 🦸‍♀️🦸‍♂️</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Eles são como super-heróis diferentes da mesma equipa. Ambos são "Nível 1", mas super avançados!</p>
+            <p class="text-2xl md:text-3xl font-bold">O importante é: Eles são FERRAMENTAS para NÓS usarmos!</p>
+        </div>
+
+        <!-- Slide 28: Introdução ao Prompt -->
+        <div id="slide-28" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-green-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Como falar com a IA?</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Nós não "programamos" o Gemini ou o ChatGPT. Nós "pedimos".</p>
+            <p class="text-2xl md:text-4xl font-bold">Esse pedido tem um nome especial: O "Prompt"! 🪄</p>
+        </div>
+
+        <!-- Slide 29: O que é Prompt? -->
+        <div id="slide-29" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-green-700 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">O que é um "PROMPT"? 📝</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">É a sua INSTRUÇÃO. O seu PEDIDO. A sua ORDEM.</p>
+            <p class="text-2xl md:text-3xl font-bold">O Prompt é como você diz à IA o que ela deve fazer.</p>
+            <p class="text-xl md:text-2xl mt-4">"Prompt" = "As Palavras Mágicas"</p>
+        </div>
+
+        <!-- Slide 30: Prompt Bom vs Ruim -->
+        <div id="slide-30" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-300 text-gray-800">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">O Pedido Mágico 🪄</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                <div class="bg-red-200 p-4 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">❌ Prompt RUIM</h3>
+                    <p class="text-lg">"Faz um desenho."</p>
+                    <p class="text-4xl mt-4">🤔</p>
+                    <p class="text-lg font-semibold">(A IA fica confusa: "Desenho de quê?")</p>
+                </div>
+                <div class="bg-green-200 p-4 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold mb-2">✅ Prompt BOM</h3>
+                    <p class="text-lg">"Desenhe um gato laranja, gordo, com um chapéu de pirata, num navio."</p>
+                    <p class="text-4xl mt-4">🐱‍☠️</p>
+                    <p class="text-lg font-semibold">(A IA entende exatamente!)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 31: A Fórmula Secreta -->
+        <div id="slide-31" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-indigo-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">A Fórmula do "Bom Prompt"</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-6">SEJA O CHEFE! 👑 Dê DETALHES!</p>
+            <ul class="text-xl md:text-2xl list-decimal list-inside text-left max-w-lg">
+                <li class="mb-2"><strong>O Quê?</strong> (A tarefa: "Escreva", "Crie", "Resuma")</li>
+                <li class="mb-2"><strong>Quem?</strong> (O Estilo: "Como um pirata", "Para uma criança")</li>
+                <li class="mb-2"><strong>Detalhes!</strong> (O Tema: "Sobre dinossauros", "Em 3 partes")</li>
+            </ul>
+        </div>
+        
+        <!-- Slide 32: O Desafio -->
+        <div id="slide-32" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-red-600 text-white">
+            <h2 class="text-5xl md:text-7xl font-black mb-6">NOSSO DESAFIO! 🚀</h2>
+            <p class="text-2xl md:text-4xl font-bold">Vamos usar a IA para...<br/>CRIAR UM JOGO!</p>
+            <span class="text-7xl mt-6">🎮</span>
+        </div>
+        
+        <!-- Slide 33: O Jogo -->
+        <div id="slide-33" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-cyan-400 text-gray-800">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">O Jogo: "Flappy Robô" 🤖</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Queremos criar um jogo estilo "Flappy Bird".</p>
+            <div class="flex items-center justify-center space-x-6">
+                <span class="text-7xl">🤖</span>
+                <span class="text-4xl">➡️</span>
+                <span class="text-7xl transform -scale-y-100">🔧</span>
+                <span class="text-4xl">➡️</span>
+                <span class="text-7xl">🔧</span>
+            </div>
+            <p class="text-xl md:text-2xl mt-6">O robô tem que desviar dos canos!</p>
+        </div>
+
+        <!-- Slide 34: O Exercício -->
+        <div id="slide-34" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-700 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Exercício: O Prompt! ✍️</h2>
+            <p class="text-xl md:text-2xl max-w-2xl">Que "Prompt" (pedido) você daria a uma IA (como eu) para criar este jogo?</p>
+            <p class="text-2xl md:text-3xl font-bold mt-6">Vamos ver dois exemplos...</p>
+        </div>
+
+        <!-- Slide 35: Prompt Ruim (Jogo) -->
+        <div id="slide-35" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-red-300 text-gray-800">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">❌ Prompt RUIM</h2>
+            <p class="text-2xl md:text-4xl font-bold bg-white p-4 rounded-lg shadow-lg">"Faz um jogo para mim."</p>
+            <span class="text-7xl my-6">🤯</span>
+            <p class="text-xl md:text-2xl font-semibold">(A IA não sabe que jogo, que regras, que cor...)</p>
+        </div>
+        
+        <!-- Slide 36: Prompt Bom (Jogo) -->
+        <div id="slide-36" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-green-300 text-gray-800">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">✅ Prompt BOM (O Pedido Mágico!)</h2>
+            <p class="text-lg md:text-xl font-bold bg-white p-4 rounded-lg shadow-lg text-left max-w-2xl">
+                "Crie um jogo completo em HTML, CSS e JavaScript num só ficheiro.
+                <br>1. O jogador é um robô 🤖.
+                <br>2. Ele voa para cima quando o jogador clica.
+                <br>3. Canos verdes 🔧 aparecem da direita.
+                <br>4. Se o robô bater num cano ou no chão, o jogo recomeça.
+                <br>5. Mostre a PONTUAÇÃO (quantos canos passou)."
+            </p>
+        </div>
+        
+        <!-- Slide 37: A Magia -->
+        <div id="slide-37" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-gray-900 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">E a IA... FAZ! 🪄</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Com o "Prompt Bom", a IA entende e escreve todo o CÓDIGO do jogo!</p>
+            <div class="bg-black text-green-400 p-4 rounded-lg shadow-inner font-mono text-left text-xs md:text-sm overflow-auto max-w-lg">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;#player { background: blue; ... }<br>
+                &nbsp;&nbsp;.pipe { background: green; ... }<br>
+                &lt;/style&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;div id="game"&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="player"&gt;🤖&lt;/div&gt;<br>
+                &nbsp;&nbsp;&lt;/div&gt;<br>
+                &nbsp;&nbsp;&lt;script&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;let score = 0;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;function gameLoop() { ... }<br>
+                &nbsp;&nbsp;&lt;/script&gt;<br>
+                &lt;/body&gt;
+            </div>
+        </div>
+
+        <!-- Slide 38: Inovação -->
+        <div id="slide-38" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-cyan-600 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">Isso é INOVAÇÃO! 💡</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">Antigamente, fazer um jogo demorava SEMANAS.</p>
+            <p class="text-2xl md:text-3xl font-bold">Com a IA, e o "Prompt" certo, você pode criar um jogo em <strong>MINUTOS!</strong></p>
+            <p class="text-xl md:text-2xl mt-4">A IA é a sua superaliada para criar coisas novas!</p>
+        </div>
+
+        <!-- Slide 39: O Poder da Ideia -->
+        <div id="slide-39" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-orange-500 text-white">
+            <h2 class="text-4xl md:text-6xl font-black mb-6">O Verdadeiro Poder... 🧠</h2>
+            <p class="text-xl md:text-2xl max-w-2xl mb-6">A IA é a ferramenta mais poderosa que já criámos.</p>
+            <p class="text-2xl md:text-4xl font-bold">Mas o poder não está na IA...<br/>Está na sua <strong>IDEIA</strong> (o seu Prompt)!</p>
+        </div>
+
+        <!-- Slide 40: Fim! -->
+        <div id="slide-40" class="slide hidden flex-col items-center justify-center p-8 md:p-12 text-center bg-blue-900 text-white">
+            <h2 class="text-5xl md:text-7xl font-black mb-6">FIM! (A sério!)</h2>
+            <p class="text-3xl md:text-5xl font-bold">Obrigado por aprender sobre IA!</p>
+            <p class="text-2xl md:text-3xl mt-8">Agora... vamos CRIAR? 🚀</p>
+        </div>
+
+    </div>
+
+    <!-- Controles de Navegação -->
+    <div class="flex justify-between items-center w-full max-w-4xl mt-6">
+        <!-- Botão Anterior -->
+        <button id="prev-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+            ⬅️ Anterior
+        </button>
+        
+        <!-- Contador de Slides -->
+        <div id="slide-counter" class="text-lg font-semibold text-gray-700 dark:text-gray-300">
+            Slide 1 / 40
+        </div>
+        
+        <!-- Botão Próximo -->
+        <button id="next-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed">
+            Próximo ➡️
+        </button>
+    </div>
+
+    <script>
+        // Lógica da Apresentação em JavaScript
+
+        // Espera o conteúdo da página carregar
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Variáveis globais
+            let currentSlide = 1;
+            // ATUALIZADO: O número total de slides agora é 40
+            const totalSlides = 40;
+            
+            // Seleciona os elementos do DOM
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const counter = document.getElementById('slide-counter');
+
+            // Função para mostrar o slide correto
+            function showSlide(slideNumber) {
+                // Atualiza o número do slide atual
+                currentSlide = slideNumber;
+
+                // Esconde todos os slides
+                slides.forEach((slide, index) => {
+                    // O slide correto tem o índice (slideNumber - 1)
+                    if (index === (slideNumber - 1)) {
+                        slide.classList.remove('hidden');
+                        slide.classList.add('flex'); // Garante que ele é flexível
+                    } else {
+                        slide.classList.add('hidden');
+                        slide.classList.remove('flex');
+                    }
+                });
+
+                // Atualiza o texto do contador
+                counter.textContent = `Slide ${currentSlide} / ${totalSlides}`;
+
+                // Ativa/Desativa os botões de navegação
+                // Desativa "Anterior" se estiver no primeiro slide
+                if (currentSlide === 1) {
+                    prevBtn.disabled = true;
+                } else {
+                    prevBtn.disabled = false;
+                }
+
+                // Desativa "Próximo" se estiver no último slide
+                if (currentSlide === totalSlides) {
+                    nextBtn.disabled = true;
+                } else {
+                    nextBtn.disabled = false;
+                }
+            }
+
+            // Adiciona eventos aos botões
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 1) {
+                    showSlide(currentSlide - 1);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides) {
+                    showSlide(currentSlide + 1);
+                }
+            });
+
+            // Adiciona navegação pelas teclas de seta (esquerda e direita)
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') {
+                    // Simula um clique no botão "Próximo"
+                    nextBtn.click();
+                } else if (e.key === 'ArrowLeft') {
+                    // Simula um clique no botão "Anterior"
+                    prevBtn.click();
+                }
+            });
+
+            // Mostra o primeiro slide ao carregar a página
+            showSlide(1);
+        });
+    </script>
+
+</body>
+</html>
+
